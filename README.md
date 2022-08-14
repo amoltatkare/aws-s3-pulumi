@@ -1,3 +1,3 @@
-# aws-ec2-pulumi
+# aws-s3-pulumi
 
-This will be base repo for creating EC2 using pulumi
+This will be base repo for creating S3 Bucket using pulumi
