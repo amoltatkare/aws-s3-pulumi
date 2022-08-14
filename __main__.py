@@ -10,7 +10,7 @@ bucketacl = data.get("acl")
 
 print (bucketname + " : " + bucketacl)
 
-bucket = aws.s3.Bucket("bucket",
+bucket = aws.s3.Bucket(bucketname,
     acl=bucketacl,
     tags={
         "Name": bucketname
