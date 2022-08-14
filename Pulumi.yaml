@@ -1,0 +1,5 @@
+name: ${PROJECT}
+description: Project to create AWS EC2 instance using Pulumi
+runtime: python
+template:
+  description: A Python Pulumi program
