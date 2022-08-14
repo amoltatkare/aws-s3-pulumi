@@ -10,7 +10,11 @@ bucketacl = data.get("acl")
 
 print (bucketname + " : " + bucketacl)
 
-bucket = aws.s3.Bucket(bucketname, acl=bucketacl)
+bucket = aws.s3.Bucket(bucketname,
+    acl=bucketacl,
+    tags={
+        "Name": bucketname
+    })
 
 pulumi.export('id', bucket.id)
 pulumi.export('region', bucket.region)
